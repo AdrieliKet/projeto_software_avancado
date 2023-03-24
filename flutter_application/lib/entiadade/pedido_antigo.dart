@@ -1,5 +1,7 @@
 import 'package:flutter_application/core/cpf_validator.dart';
-
+// A classe Pedido agora é responsável por armazenar os itens do pedido em uma lista de objetos da classe ItemPedido. 
+// A classe ItemPedido agora é responsável por realizar o cálculo do total de cada item com o desconto, caso haja algum.
+// Os métodos validaCupom() e getValorCupom() foram movidos para a classe ItemPedido, já que se tratam de funções relacionadas ao desconto do item e não do pedido em si.
 class Pedido {
   var itens = <Object>[];
   var total = 0.0;
